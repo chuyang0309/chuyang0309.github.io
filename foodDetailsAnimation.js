@@ -61,9 +61,8 @@ gsap.to(".left", {
 		duration: 1.5, 
 		scrollTrigger: {
 				trigger: ".left", 
-				start: "top 90%", 
+				start: "top 80%", 
 				toggleActions: "play none none none",
-				markers: true
 		}
 });
 
@@ -73,7 +72,7 @@ gsap.to(".right", {
 	duration: 1.5,
 	scrollTrigger: {
 		trigger: ".right", 
-		start: "top 100%", 
+		start: "top 80%", 
 		toggleActions: "play none none none"
 	}
 },"<+6");
