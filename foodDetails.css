@@ -129,7 +129,7 @@ main{
 }
 
 #s2 {
-    height:100vh;
+    height:83vh;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -370,6 +370,10 @@ p.right {
 
     #s3{
         height: 40vh;
+    }
+
+    #s3>h1{
+        font-size: 3.3rem;
     }
 
     #s4 {
