@@ -3,14 +3,19 @@
     <head>
         <title>Food List Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Shared components CSS (load BEFORE your custom CSS) -->
+        <link rel="stylesheet" href="shared-components.css">
+        
+        <!-- Your existing CSS -->
         <link rel="stylesheet" href="foodList.css">
     </head>
 
     <body>
+        <!-- Header will be populated by shared-components.js -->
         <header>
-            <img src="navigation logo.png" alt="navigation figure" style="height: 25px; width: auto;">
-            <img src="Food kaki.my (Light).png" alt="website logo" style="height: 60px; width: auto">
-            <img src="Sample_User_Icon.png" alt="user icon" style="height: 60px; width: auto">
         </header>
         
         <main id="content">
@@ -32,6 +37,14 @@
             </section>
 
         </main>
+        
+        <!-- Footer will be populated by shared-components.js -->
+        <footer></footer>
+
+        <!-- Shared components JavaScript (load BEFORE your custom scripts) -->
+        <script src="shared-components.js"></script>
+        
+        <!-- Your existing scripts -->
         <script src="foodListData.js" type="module"></script>
     </body>
 </html>

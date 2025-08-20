@@ -38,6 +38,8 @@ function createFoodCard(food) {
     foodCardList.appendChild(foodCard);
 }
 
+
+//search function
 document.getElementById("searchButton").addEventListener('click', function () {
     document.getElementById('foodCardList').innerHTML = '';  //clear foodCardList contents 
 

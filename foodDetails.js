@@ -26,6 +26,9 @@ window.onload = function () {
         document.getElementById('address').innerHTML = selectedFood.spotAddress;
         document.getElementById('mapLink').href = selectedFood.mapLink;
 
+        document.getElementById('favourite-btn').addEventListener('click', function () {
+            saveFavouriteFood(foodId);
+        });
     } else {
         // If no food is found, display error
         // Replace HTML content with error message
@@ -36,8 +39,50 @@ window.onload = function () {
         document.body.innerHTML = '<h1>Food not found! :(</h1>';
         }
     }
+
+    // Function to retrieve and display favorite food IDs
+    function displayFavouriteFoods() {
+        const favourites = JSON.parse(localStorage.getItem('favouriteFoods')) || [];
+
+        // Check if the array is not empty
+        if (favourites.length > 0) {
+            console.log("Favorite Food IDs:");
+
+            // 2. Loop through the array using forEach()
+            favourites.forEach(foodId => {
+                // Log each food ID to the console
+                console.log(foodId);
+
+                
+                // You can use this foodId to find the corresponding food object from your data.
+                // For example, if you had a 'foods' array available:
+                const favouriteFood = foods.find(food => food.id == foodId);
+                if (favouriteFood) {  //if found
+                    // Do something with the favourite food object, like displaying its name
+                    console.log(favouriteFood.name); 
+                    console.log(favouriteFood.foodBannerImage);   //just food image
+                }
+            });
+        } else {
+            console.log("You have no favorite foods saved.");
+        }
+    }
+
 };
 
-document.getElementById('favourite-btn').addEventListener('click',function(){
-    
-})
+function saveFavouriteFood(foodId) {
+    // Get existing favourite food IDs from local storage
+    const favourites = JSON.parse(localStorage.getItem('favouriteFoods')) || [];
+
+    // Check if the food ID already exists in the list to prevent duplicates
+    if (!favourites.includes(foodId)) {
+        // Add the new food ID to the list
+        favourites.push(foodId);
+
+        // Save the updated list back to local storage
+        localStorage.setItem('favouriteFoods', JSON.stringify(favourites));
+        alert('Food added to favourites!');
+    } else {
+        alert('Food is already in your favourites!');
+    }
+}
