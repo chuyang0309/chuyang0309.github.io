@@ -1,0 +1,134 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+
+header {
+    background-color: white;
+
+    display: flex;
+    height: 73px;
+    width: 100%;
+    margin: 0px;
+    padding: 13px 15px 13px 18px;
+    border: 0px;
+    box-sizing: border-box;
+    
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 73px;
+    box-sizing: border-box;
+}
+
+
+#s1, #s2, #s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#s1{
+    margin: 3vh;
+}
+
+#searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
+    height:6vh;
+    background-color: white;
+    border-radius: 100px;
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#searchInput{
+    width: 90%;
+    height:100%;
+
+    border-width: 0px;
+    padding: 0px 25px;
+
+    background-color: white;
+    border-radius: 100px;
+}
+
+#searchButton{
+    display:flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+#searchIcon{
+    border:0px;
+    padding:0px;   
+    width: 50px;
+}
+
+#s2{
+    margin: 5vh;
+}
+
+#s3{
+    display: flex;
+    margin-left:12.5vw;
+    margin-right: 12.5vw; 
+}
+
+#foodCardList{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.foodCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 250px;
+    margin: 40px;
+    padding: 10px;
+}
+
+.foodCard>h2{
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size:20px;
+}
+
+.foodCard>h2>a{
+    text-decoration: none; 
+    color: black;
+}
+
+#s3 img{
+    height:78%;
+    width:100%;
+    object-fit: cover; 
+    border-radius: 7px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>A food detail</title>
+    <link rel="stylesheet" href="foodDetails.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+        
+</head>
+
+<body>
+    <header>
+        <img src="navigation logo.png" alt="navigation figure" style="height: 25px; width: auto;">
+        <img src="Food kaki.my (Light).png" alt="website logo" style="height: 60px; width: auto">
+        <img src="Sample_User_Icon.png" alt="user icon" style="height: 60px; width: auto">
+
+    </header>
+
+    <main>
+        <!-- <a href="#s1" id="jump"><img src="jump.png" alt="jump-to-top"/></a> -->
+
+        <section id="s1">
+            <div id="foodHeaderText">
+                <p id="food">Ipoh Bean <br /> Sprout Chicken</p>
+                <p id="location" class="fadeInUp-animation">
+                    Ipoh, Perak
+                </p>
+            </div>
+            <img src="ipohChicken2.jpg" style="width: 50%; height: 100%; object-fit: cover;">
+        </section>
+
+        <section id="s2">
+            <h1 id="title">Ipoh's Famous Bean Sprout Chicken (豆芽鸡) - A Culinary Icon</h1>
+            <div id="subtext">
+                <p>Savor the taste of Ipoh's most beloved dish—Bean Sprout Chicken (Nga Choy Kai / 芽菜鸡).</p> 
+                <p>A harmonious blend of succulent poached chicken, plump bean sprouts, and fragrant rice. </p> 
+                <p>This iconic meal is a must-try for food lovers visiting Malaysia's food capital.</p>
+            </div>
+        </section>
+
+        <section id="s2_1">
+            <div id="subtext">
+                <h1>Tender, silky-smooth chicken.</h1>  
+                <p>Gently cooked to perfection and served with a light soy-ginger sauce.</p>
+                <p>Tender, succulent chicken, gently poached to perfection in a fragrant broth, ensuring every bite remains juicy and flavorful. </p>
+                <h1 class="alignRight">Grown in <span id="gold">mineral-rich</span> local water.</h1>
+                <p class="alignRight">These fat, crisp sprouts are flash-fried in garlic oil for extra aroma.</p>
+            </div>
+        </section>
+
+        <section id="s3">
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="https://fatqueencooks.com/wp-content/uploads/chicken1.png" alt="image1">
+                    <img class="slide" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/86/dc/f1/dsc-2434-largejpg.jpg" alt="image2">
+                    <img class="slide" src="https://admin.misstamchiak.com/wp-content/uploads/2020/12/laowang-feature-scaled.jpg" alt="image3">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+        </section>
+
+        <section id="s4">
+            <h1 id="title">Know more about this food:</h1>
+            <iframe width="520" height="300" src="https://www.youtube.com/embed/9T82RNUTs6Y?si=HtsYQsi7lyj7ewK3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="s5">
+            <p id="title">Our <span id="orange">recommended</span> go-to spot:</p>
+            
+            <div id="spot-details">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0001632190897!2d101.0842029!3d4.5939917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caec649ecc89cd%3A0x35f524ee7e2905c2!2sRestoran%20Tauge%20Ayam%20Lou%20Wong!5e0!3m2!1sen!2smy!4v1753519900539!5m2!1sen!2smy" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p id="spot-address">
+                    <span id="name">Restoran Tauge Ayam Lou Wong </span><br/>
+                    <span id="address">49, Jalan Yau Tet Shin, Taman Jubilee, 30000 Ipoh, Perak</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="foodDetails.js"></script>
+</body>
+
+</html>
