@@ -50,7 +50,6 @@ gsap.to("#s2 .fade-up", {
 		scrollTrigger: {
 				trigger: "#s2 .fade-up", 
 				start: "top 80%", 
-				end: "bottom 20%",
 				toggleActions: "play none none none" 
 		}
 });
@@ -61,7 +60,7 @@ gsap.to(".left", {
 		duration: 1.5, 
 		scrollTrigger: {
 				trigger: ".left", 
-				start: "top 80%", 
+				start: "top center", 
 				toggleActions: "play none none none",
 		}
 });
@@ -72,7 +71,7 @@ gsap.to(".right", {
 	duration: 1.5,
 	scrollTrigger: {
 		trigger: ".right", 
-		start: "top 80%", 
+		start: "top center", 
 		toggleActions: "play none none none"
 	}
 },"<+6");
