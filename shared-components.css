@@ -23,7 +23,9 @@ html, body {
     top: 0;
     z-index: 1000;
     font-family: 'Inter', Arial, sans-serif;
+    width: 100%;           /* ensures full width */
 }
+
 
 .site-header-container {
     max-width: 1200px;
@@ -46,12 +48,6 @@ html, body {
 
 .site-logo:hover {
     opacity: 0.8;
-}
-
-.site-logo::before {
-    content: "🍽️";
-    margin-right: 0.5rem;
-    font-size: 2rem;
 }
 
 .site-nav {

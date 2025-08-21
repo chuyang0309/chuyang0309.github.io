@@ -4,7 +4,7 @@ function initSharedComponents() {
     <div class="site-header-container">
         <!-- Logo -->
         <a href="home.html" class="site-logo">
-            <img src="images/websiteLogo.png" alt="FoodieHub Logo">
+            <img src="images/foodkakiLogo.png" alt="FoodieHub Logo">
         </a>
 
         <!-- Navigation -->

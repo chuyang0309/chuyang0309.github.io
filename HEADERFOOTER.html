@@ -51,12 +51,6 @@
             opacity: 0.8;
         }
 
-        .site-logo::before {
-            content: "🍽️";
-            margin-right: 0.5rem;
-            font-size: 2rem;
-        }
-
         .site-nav {
             display: flex;
             list-style: none;
@@ -182,68 +176,4 @@
         }
     </style>
 </head>
-<body>
-    <!-- This is just a demo of the shared components -->
-    <header class="site-header">
-        <div class="site-header-container">
-            <a href="index.html" class="site-logo">FoodieHub</a>
-            <nav class="site-nav">
-                <a href="index.html" class="site-nav-link">Home</a>
-                <a href="foodList.html" class="site-nav-link">Food List</a>
-                <a href="favorites.html" class="site-nav-link">Favorites</a>
-            </nav>
-            <button class="site-mobile-toggle">☰</button>
-        </div>
-    </header>
-
-    <main style="min-height: 400px; padding: 2rem; background: #f8f9fa;">
-        <h1>This is a demo of the shared header and footer</h1>
-        <p>Your page content goes here. The header and footer will not conflict with your existing CSS.</p>
-    </main>
-
-    <footer class="site-footer">
-        <div class="site-footer-container">
-            <div class="site-footer-content">
-                <div class="site-footer-section">
-                    <h3>About FoodieHub</h3>
-                    <p>Discover amazing local foods and hidden culinary gems in your area.</p>
-                </div>
-                <div class="site-footer-section">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a><br>
-                    <a href="foodList.html">Food List</a><br>
-                    <a href="favorites.html">Favorites</a>
-                </div>
-                <div class="site-footer-section">
-                    <h3>Contact</h3>
-                    <p>Email: info@foodiehub.com</p>
-                    <p>Phone: (555) 123-4567</p>
-                </div>
-            </div>
-            <div class="site-footer-bottom">
-                <p>&copy; 2025 FoodieHub. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.site-mobile-toggle').addEventListener('click', function() {
-            document.querySelector('.site-nav').classList.toggle('active');
-        });
-
-        // Set active nav link based on current page
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('.site-nav-link');
-            
-            navLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
 </html>
