@@ -26,7 +26,7 @@ function createFoodCard(food) {
 
     // Create the anchor (link) element and set its href and text content dynamically
     const a = document.createElement('a');
-    a.href = `foodDetails2.html?id=${food.id}`;
+    a.href = `foodDetails.html?id=${food.id}`;
     a.textContent = food.name;
 
     // Assemble the card

@@ -8,22 +8,6 @@ body{
 }
 
 
-header {
-    background-color: white;
-
-    display: flex;
-    height: 73px;
-    width: 100%;
-    margin: 0px;
-    padding: 13px 15px 13px 18px;
-    border: 0px;
-    box-sizing: border-box;
-    
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
-}
 
 main{
     display: flex;
